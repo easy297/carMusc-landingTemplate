@@ -1,0 +1,23 @@
+@font-face {
+    font-display: swap;
+    font-family: 'ReformaGroteskMediumC';
+    src: url('../fonts/ReformaGroteskMediumC.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'ReformaGroteskDemiC';
+    src: url('../fonts/ReformaGroteskDemiC.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'ReformaGroteskBoldC';
+    src: url('../fonts/ReformaGroteskBoldC.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}

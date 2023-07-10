@@ -1,0 +1,508 @@
+@import url("fonts.css");
+@import url("normalize.css");
+
+* {
+    font-family: ReformaGroteskDemiC, sans-serif;
+    color: #FFFFFF;
+}
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*fadein anim*/
+
+.scroll-item {
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.scroll-item.animation-class {
+    opacity: 1;
+    transform: none;
+    transition-delay: 0.3s;
+}
+
+.wrapper {
+    background-image: url("../images/toyotaCamry.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menuLogo {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #DB3138;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.header {
+    padding: 11px 312px;
+}
+
+.navbar {
+    align-items: center;
+
+}
+
+.nav-list {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+
+}
+
+.nav-list a {
+    color: #FFF;
+    text-decoration: none;
+    font-family: ReformaGroteskMediumC, serif;
+    font-size: 28px;
+    line-height: 120%;
+    margin-right: 40px;
+
+}
+
+.nav-list li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+/*BIG CONTENT*/
+
+.content {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.bigtext {
+    color: #DB3138;
+    font-family: ReformaGroteskBoldC, serif;
+    font-size: 150px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+
+.romb {
+    margin-bottom: 20px;
+}
+
+.content-text {
+    font-family: ReformaGroteskMediumC, sans-serif;
+    font-size: 40px;
+    color: #FFF;
+    margin-bottom: 50px;
+}
+
+.content-button {
+    font-family: ReformaGroteskDemiC, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFF;
+    text-decoration: none;
+    padding: 15px 30px;
+
+    background-image: linear-gradient(#DB3138,#DB3138);
+    background-size: 60% 100%;
+    background-repeat: no-repeat;
+    transition: .4s;
+}
+
+.content-button:hover {
+    background-size: 100% 100%;
+}
+
+
+.content-down {
+    margin-top: 103px;
+    text-align: center;
+}
+
+
+
+.content-down h6 {
+    font-family: ReformaGroteskDemiC, sans-serif;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.content-down p {
+    font-family: ReformaGroteskDemiC, sans-serif;
+    color: #DB3138;
+    font-size: 24px;
+}
+
+.content-down-text {
+    padding: 50px 188px;
+}
+
+.custom-border {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/*Header-down*/
+
+.header-down {
+    background-color: #141414;
+    padding-bottom: 50px;
+}
+
+.container h1 {
+    color: #FFF;
+    font-size: 52px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    margin-bottom: 50px;
+}
+
+.content-change {
+    padding-top: 180px;
+    display: flex;
+}
+
+.container p {
+    font-family: ReformaGroteskMediumC, sans-serif;
+    font-size: 24px;
+}
+
+.content-left p {
+    padding-top: 60px;
+}
+
+
+.custom-column {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.custom-column h2 {
+    color: #DB3138;
+    font-family: ReformaGroteskDemiC, sans-serif;
+    font-size: 44px;
+}
+
+.custom-column p {
+    font-family: ReformaGroteskDemiC, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.content-right {
+    display: flex;
+    margin-left: 100px;
+}
+
+.row2 {
+    transform: translate3d(-1px, 40px, 0);
+}
+
+
+.custom-container {
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+
+.content-button2 {
+    display: inline-block;
+    font-family: ReformaGroteskDemiC, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 15px 30px;
+    text-transform: uppercase;
+
+    border-radius: 4px;
+    overflow:hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.08s ease-in;
+    text-align: justify-all;
+    position: relative;
+    top: -30px;
+}
+
+
+.slider {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-button2:hover {
+    color: whitesmoke;
+}
+
+.content-button2:before {
+    content: "";
+    position: absolute;
+    background: #DB3138;
+    bottom: 30%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: bottom 0.3s ease-in;
+}
+
+.content-button2:hover:before {
+    bottom: 0;
+}
+
+
+.logonh2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logonh2 h2 {
+    text-transform: uppercase;
+    font-family: ReformaGroteskDemiC, sans-serif;
+    font-size: 32px;
+}
+
+.page-left p {
+    margin-bottom: 40px;
+    font-family: ReformaGroteskMediumC, sans-serif;
+    font-size: 24px;
+}
+
+.page-left img {
+    margin-bottom: 40px;
+}
+
+.image {
+    margin-bottom: 40px;
+}
+
+.page-right p {
+    text-transform: uppercase;
+    font-family: ReformaGroteskDemiC, sans-serif;
+    font-size: 18px;
+}
+
+/*SERVICES*/
+
+.services {
+    margin-top: 170px;
+    margin-bottom: 180px;
+}
+
+.services h1 {
+    text-transform: uppercase;
+    font-family: ReformaGroteskDemiC, sans-serif;
+    font-size: 52px;
+}
+
+
+.services-img {
+    margin-bottom: 70px;
+    height: 56px;
+}
+
+.red-button {
+    font-family: ReformaGroteskDemiC, sans-serif;
+    font-size: 32px;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 20px 40px;
+}
+
+
+.red-button:focus {
+    background-color: #DB3138;
+}
+
+.custom-row {
+    padding-top: 120px;
+}
+
+/*OUR-WORKS*/
+
+.works h2 {
+    margin-top: 180px;
+    margin-bottom: 40px;
+
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.works-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+}
+
+.footer {
+    background-color: #141414;
+}
+
+.footer h2 {
+    padding-top: 60px;
+    margin-bottom: 30px;
+
+    text-transform: uppercase;
+    font-size: 52px;
+    font-weight: 600;
+}
+
+input,
+textarea,
+select,
+button {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: ReformaGroteskDemiC, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid #898989;
+}
+
+
+
+
+textarea:focus, input:focus {
+    outline: none !important;
+    border: 1px solid #DB3138;
+    box-shadow: 0 0 10px #29343b;
+}
+
+.footer input {
+    background-color: #141414;
+    padding: 15px 30px;
+    width: 300px;
+
+
+    margin-top: 60px;
+    margin-bottom: 24px;
+}
+
+input[type=name] {
+    margin-right: 24px;
+}
+
+textarea {
+    background-color: #141414;
+    padding: 15px 30px;
+    position: relative;
+    left: -29px;
+
+
+    width: 526px;
+    height: 150px;
+}
+
+.icons {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    top: -126px;
+    left: 27px;
+    margin-bottom: -100px;
+}
+
+.telegram {
+    margin-bottom: 13px;
+}
+
+.youtube {
+    margin-bottom: 13px;
+}
+
+.icons img {
+
+
+    /* only for example styling */
+    border: 1px solid #dedede;
+    padding: 10px;
+    text-align: center;
+}
+
+.address {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.address a {
+    position: relative;
+    top: 0;
+    left: -83px;
+}
+
+.location-phone-mail {
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    left: 83px;
+}
+
+.phone-mail {
+    position: relative;
+    left: 46px;
+}
+
+
+.location {
+    margin-bottom: 13px;
+}
+
+.telPhone {
+    margin-right: 30px;
+}
+
+.footer-container {
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 9px;
+    padding-bottom: 10px;
+}
+
+.footer-list {
+    font-size: 16px;
+    font-family: ReformaGroteskMediumC, sans-serif;
+}
+
+.footer-container p {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: ReformaGroteskDemiC,sans-serif;
+    opacity: 0.5;
+    padding-top: 20px;
+}
